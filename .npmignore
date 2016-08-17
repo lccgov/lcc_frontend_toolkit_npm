@@ -1,0 +1,3 @@
+bin/
+.travis.yml
+npm-debug.log
