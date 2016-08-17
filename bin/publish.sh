@@ -49,9 +49,10 @@ if [ "$VERSION_LATEST" != "$VERSION_REGISTRY" ]; then
   git commit -m "Bump npm version of lcc_frontend_toolkit to $VERSION_LATEST [ci skip]"
   echo "Publishing package $VERSION_LATEST";
 	echo "//registry.npmjs.org/:_password=${NPMTOKEN}" > ~/.npmrc
+  echo "//registry.npmjs.org/:_authToken=${NPMAUTH}" >> ~/.npmrc
 	echo "//registry.npmjs.org/:username=lccgov" >> ~/.npmrc
 	echo "//registry.npmjs.org/:email=developer@leeds.gov.uk" >> ~/.npmrc
-	npm publish ./
+	npm publish
   git push --quiet https://$GITHUBKEY@github.com/$TRAVIS_REPO_SLUG > /dev/null 2>&1
 else
   echo 'VERSION.txt is the same as the version available on the registry'
