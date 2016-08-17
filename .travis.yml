@@ -3,8 +3,10 @@ before_install:
   - echo "//registry.npmjs.org/:_password=\${NPMTOKEN}" >> .npmrc
   - echo "//registry.npmjs.org/:username=lccgov" >> .npmrc
   - echo "//registry.npmjs.org/:email=developer@leeds.gov.uk" >> .npmrc
-install: npm install -g npm
+install: 
+  - npm install -g npm
 script:
+- npm whoami
 - chmod +x ./bin/publish.sh
 - "./bin/publish.sh"
 env:
