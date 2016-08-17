@@ -48,9 +48,8 @@ if [ "$VERSION_LATEST" != "$VERSION_REGISTRY" ]; then
   git add -A
   git commit -m "Bump npm version of lcc_frontend_toolkit to $VERSION_LATEST [ci skip]"
   echo "Publishing package $VERSION_LATEST";
-  yes '' | npm adduser
   npm whoami
-	npm publish ./
+	npm publish
   git push --quiet https://$GITHUBKEY@github.com/$TRAVIS_REPO_SLUG > /dev/null 2>&1
 else
   echo 'VERSION.txt is the same as the version available on the registry'
