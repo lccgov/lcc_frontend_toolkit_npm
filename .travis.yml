@@ -1,5 +1,6 @@
 before_install:
   - echo "//registry.npmjs.org/:_authToken=\${NPMAUTH}" > .npmrc
+install: npm install
 script:
 - chmod +x ./bin/publish.sh
 - "./bin/publish.sh"
