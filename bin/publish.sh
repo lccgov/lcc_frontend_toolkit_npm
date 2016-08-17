@@ -8,8 +8,6 @@ if [ $TRAVIS_EVENT_TYPE != "api" ]; then
   exit 0;
 fi
 
-echo "//registry.npmjs.org/:_authToken=${NPMAUTH}" > ~/.npmrc
-
 git checkout master
 git reset --hard origin/master
 
