@@ -1,0 +1,14 @@
+@import 'url-helper';
+
+ .logo{
+
+        height:148px;
+        width:280px;
+        background:file-url('logo.png') center center no-repeat;
+        margin:20px 0;
+
+        @media (max-width: 767px){
+            height:100px;
+            margin:20px auto;
+        }
+    }

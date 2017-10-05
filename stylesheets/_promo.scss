@@ -1,0 +1,108 @@
+.promo {
+    background-size:cover !important;
+    padding: 0;
+    margin-bottom: $base-margin-bottom;
+    position: relative;
+    width: 100%;
+
+    overflow:hidden;
+
+a{
+    display:block;
+    min-height:270px;
+
+    span.image{
+    height:100%;
+    width:100%;
+    bottom:0px;
+    transition: transform 1s;
+    background-size:cover !important;
+
+  
+        &:hover { transform:scale(1.1) }
+
+        &:after{
+            display:none;
+        }
+ 
+
+}
+
+ span {
+    background:$promo-span-back;
+    padding: 15px;
+    color: $promo-span-color;
+    border-radius: 0 0px 0px 0;
+    bottom: 0px;
+    color:$promo-span-color;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    transition:all 0.5s ease;
+
+    &:after{
+            content: '\f105';
+            font-family: FontAwesome;
+            position: absolute;
+            font-weight: normal;
+            bottom: 17px;
+            right: 0px;
+            height: 25px;
+            width: 25px;
+            display: block;
+            color: $promo-span-color;
+            font-size: 22px;
+            transition:all 0.5s ease;
+
+    }
+}
+
+&:hover span{
+    width:100%;
+    padding: 15px 15px 40px 15px;
+}
+
+}
+}
+
+
+
+.two .listWebpart ul .promo {
+    width: 48%!important
+}
+
+.three .listWebpart ul .promo {
+    width: 31.33%!important
+}
+
+.four .listWebpart ul .promo {
+    width: 23%!important
+}
+
+.two,
+.three,
+.four{
+    .listWebpart{
+        ul{
+            @include flexbox();
+            @include flex-wrap(wrap);
+            margin: 0 0 0 -2%;
+
+            @media (max-width: 600px) {
+                margin:0;
+            }
+
+            .promo{
+                @include flexbox();
+                @include align-items(stretch);
+                margin:0 0 2% 2%;
+
+                @media (max-width: 600px) {
+                    margin:0 0 15px;
+                    width:100% !important;
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,255 @@
+// masterhead.scss
+$head-background: #ffffff !default;
+
+//mainMenu.scss -- responsive icons color
+$menu-link-color:#337ab7 !default;
+
+//base.scss
+$base-background-color:#fff !default;
+$base-font-size:16px !default;
+$base-font-color:#333 !default;
+$base-link-color:#133E8D !default;
+$base-container-width:1500px !default;
+$btn-background-color:green !default;
+$font-primary: Arial !default; // main font
+$font-secondary: Arial !default; // secondary font
+$header-font-color: #333 !default;
+$header-font-weight: 600 !default;
+
+//panel colours
+$panel-color:#F6F7FA !default;
+$panel-color-secondary: darken(#F6F7FA,5%) !default;
+
+//global used on all partials to get a uniform spacing between elements
+$base-margin-bottom:1.875em !default;
+
+//headerTop
+$search-link-background:#F3F3F4 !default;
+$search-link:#333 !default;
+
+// mainNav.scss
+$main-nav-background:#133E8D !default;
+$main-nav-active-background:#0D2B62 !default;
+$main-nav-link:#fff !default;
+$main-nav-selected-link: #fff !default;
+$main-nav-background-hover:#0D2B62 !default;
+$main-nav-link-background:#133E8D !default;
+$main-nav-flyout-link-background:#133E8D !default;
+$main-nav-flyout-background:#133E8D !default;
+$main-nav-flyout-link:#fff !default;
+
+//footer.scss
+$footer-font-color:#fff !default;
+$footer-nav-selected-link:#133E8D !default;
+$footer-list-item-width:23%  !default;
+$footer-gutter-width:0 1% !default;
+
+//sectionSubsite.scss - socialamedia.scss
+$section-Background:#efefef !default;
+
+//socialamedia.scss
+$social-link-color:#337ab7 !default;
+
+//sideNavigation.scss
+$side-nav-active-background:#133E8D !default;
+
+//carousel.scss
+$carousel-active-background:#000 !default;
+$carousel-indicators-active-background:#ccc !default;
+$carousel-caption-background: rgba(0,0,0,0.6) !default;
+$carousel-caption-font-color:#fff !default;
+
+// blocklinks.scss
+$block-link-back:#f6f6f6 !default;
+$block-link-back-hover:#3380A4 !default;
+
+$promo-group-border:1px solid #fff !default; 
+$promo-group-background:#EDF2F5 !default; 
+$promo-group-li-background:#EDF2F5 !default;
+$promo-group-link-color:#216486 !default;
+
+//promolist webpart
+$link-font-color:#fff !default ;
+$span-info-color:#133E8D !default;
+$span-info-hover:#131A22 !default;
+$span-info-secondary-color:#fff !default;
+$span-arrow-base:darken($span-info-color, 10%) !default;
+$span-third-info-base:#f6f6f6 !default;
+$third-info-font-color:#333 !default;
+$arrow-color:#fff !default;
+$contentFontColor:#333 !default;
+$content-arrow-color:#133E8D !default;
+$content-border-color:#ddd !default;
+$green:#009999 !default;
+$lime:#CCCC00 !default;
+$yellow:#FFCC33 !default;
+$orange:#FF6666 !default;
+$magenta:#CC6699 !default;
+$pink:#FF6699 !default;
+$purple:#666699 !default;
+
+//section backgrounds
+$sectionHeader-background-color:lighten($base-background-color, 3%) !default;
+$sectionOne-background-color:darken($base-background-color, 5%) !default;
+$sectionTwo-background-color:darken($base-background-color, 10%) !default;
+$sectionThree-background-color:lighten($base-background-color, 3%) !default;
+$sectionFour-background-color:lighten($base-background-color, 5%) !default;
+$sectionFive-background-color:darken($base-background-color, 5%) !default;
+
+//eventwebparts
+$eventsfilter-hightlight-color:#000 !default;
+
+//accordion
+$accordion-color:blue !default;
+$accordion-border-color:#dedede !default;
+
+//news
+$news-button-background: green !default;
+$news-pod-back:#F7F9F9 !default;
+$news-pod-border-color:#fff !default;
+
+//list display webpart 
+$list-webpart-back:#ddd !default;
+$list-webpart-font-color:#333 !default;
+
+//SideNav
+$sidenav-active-color:#E67E22 !default;
+
+//Promo background 
+$promo-span-back:rgba(0,0,0,0.6) !default;
+$promo-span-color:#fff !default;
+
+//Block quote
+$blockquoteBorderColor:#bbcada !default;
+$blockquoteQuoteColor:#333 !default;
+$blockquoteQuoteFooterColor:#000!default;
+
+//highlighted box in contentAssets
+$highlighted-background-color:#333 !default;
+$highlighted-font-color:#fff !default;
+$highlighted-alt-background-color:#f6f6f6 !default;
+$highlighted-alt-font-color:#333 !default;
+
+//mega-promo
+$promo-background-color:#F6F7FA !default;
+$promo-arrow-color:#9DA5B2 !default;
+$promo-header-color:#3D414A !default;
+$promo-secondary-color:#666B76 !default;
+$promo-highlight-background-color:#F6F7FA !default;
+$promo-highlight-color:#3D414A !default;
+$promo-arrow:"\f054" !default;
+
+//button colours
+$primary-button-background-color:green !default;
+$primary-button-color:white !default;
+$secondary-button-background-color:blue !default;
+$secondary-button-color:white !default;
+$outline-button-border-color:blue !default;
+$outline-button-color:blue !default;
+
+//group promo colours
+$group-promo-background-color: #F6F7FA  !default;
+$group-promo-header-color: #3D414A  !default;
+$group-promo-description-color: #666B76  !default;
+$group-promo-arrow-color: #9DA5B2  !default;
+
+//mixins
+@mixin link-border-bottom($color,$opacity,$visited-color){
+    color:$color;
+    border-bottom:1px solid rgba($color,$opacity);
+    text-decoration:none;
+    cursor:pointer;
+
+    &:hover{
+        color:darken($color,10%);
+        border-color:darken($color,10%);
+        text-decoration:none;
+    }
+
+    &:visited{
+        color:$visited-color;
+        border-color:rgba($visited-color,$opacity);
+        text-decoration:none;
+    }
+}
+
+@mixin column-count($val) {
+    -webkit-column-count: $val;
+    -moz-column-count: $val;
+    column-count: $val;
+}
+
+@mixin column-gap($val) {
+    -webkit-column-gap: $val;
+    -moz-column-gap: $val;
+    column-gap: $val;
+}
+
+.three-columns{
+    @include column-count(3);
+    @include column-gap(30px);
+
+    @media (max-width: 990px) {
+        @include column-count(2);
+    }
+
+    @media (max-width: 767px) {
+        @include column-count(1);
+    }
+}
+
+.two-columns{
+    @include column-count(2);
+    @include column-gap(30px);
+
+    @media (max-width: 767px) {
+        @include column-count(1);
+    }
+}
+
+@mixin background-size($val) {
+    -webkit-background-size: $val;
+    -moz-background-size: $val;
+    -o-background-size: $val;
+    background-size: $val;
+}
+
+@mixin background-size($val) {
+    -webkit-background-size: $val;
+    -moz-background-size: $val;
+    -o-background-size: $val;
+    background-size: $val;
+}
+
+@mixin background-radial($top,$bottom,$base) {
+    background: $base;
+    background: -webkit-radial-gradient($top, $bottom); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient($top, $bottom); /* For Opera 11.1 to 12.0 */
+    background: -moz-radial-gradient($top, $bottom); /* For Firefox 3.6 to 15 */
+    background: radial-gradient($top, $bottom); /* Standard syntax */
+}
+
+//extra colours
+$focus-color:#FFBF47 !default;
+$secondary-link-color:#003F55 !default;
+$secondary-font-color:#666B76 !default;
+$border-color:#DCDEE1 !default;
+$panel-color:darken(#F6F7FA,3%) !default;
+$button-hover-color:lighten(#008000,5%) !default;
+$base-link-hover-color:#3399BB !default;
+$black:#212224 !default;
+$light-black:#3D414A !default;
+$dark-grey:#666B76 !default;
+$grey:#9DA5B2 !default;
+$light-grey:#DCDEE1 !default;
+$lighter-grey:#F6F7FA !default;
+
+//form colours
+$input-color:#212224 !default;
+$input-border-color:#9DA5B2 !default;
+
+
+//Arrow Link
+$ArrowLinkBorderColor:#bbcada !default;
+$ArrowLinkColor:#333 !default;
+
