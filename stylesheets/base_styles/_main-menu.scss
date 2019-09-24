@@ -124,7 +124,7 @@ ul ul  {
 
 
 
- li:hover > ul, li:focus > ul {
+ li:hover > ul, li:focus > ul, li a:focus ~ ul {
     display: block;
 }
 
@@ -151,6 +151,8 @@ ul ul  {
         .container-fluid
         {
             padding:20px;
+            position: relative;
+            z-index: 1;
         }
     
     
