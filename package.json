@@ -1,6 +1,6 @@
 {
   "name": "lcc_frontend_toolkit",
-  "version": "0.330.0",
+  "version": "0.331.0",
   "description": "npm package for using the lcc frontend toolkit",
   "repository": {
     "type": "git",
